@@ -1,43 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jawhara Chafi - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Jawhara Chafi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- En-tête principal -->
-    <header>
-        <h1>Jawhara Chafi</h1>
-        <p>Stagiaire Data Scientist</p>
-        <div class="links">
-            <a href="#">À propos</a>
-            <a href="#">À voir par ailleurs</a>
-        </div>
-    </header>
+  <header>
+    <h1>Jawhara Chafi</h1>
+    <p>Stagiaire Data Scientist</p>
+    <nav>
+      <a href="#about">À propos</a> | 
+      <a href="#projects">À voir par ailleurs</a>
+    </nav>
+    <p><span>🧑‍💼 Data Science, Data Analyst</span> 
+        <span> <img src="images/linkedin_logo.png" alt="LinkedIn" style="width:15px; vertical-align:middle;"> <a href ="https://www.linkedin.com/in/jawhara-chafi/"> Linkedin </a>  </span></p>
+  </header>
+  <section id="apropos">
 
-    <!-- Section des tags et catégories -->
-    <section class="tags">
-        <span>🎓 Data Science, Data Analyst</span>
-    </section>
+  </section>
+  <section id="projects">
+    <!-- Projet Mémoire de recherche -->
+    <div class="project">
+      <h2>Mémoire de recherche : Débruitage d’image par chaîne de Markov</h2>
+      <p>Étude d'une méthode pour enlever le bruit d’une image par les chaînes de Markov</p>
+      <ul>
+        <li>Estimation du paramètre de texture par Metropolis-Hastings sur une image bruitée avec mot de passe</li>
+        <li>Parallélisation du programme sur R</li>
+        <li>Réalisation du rapport sur Rmarkdown</li>
+      </ul>
+    </div>
 
-    <!-- Section principale des publications -->
-    <main>
-        <article>
-            <h2>Mémoire de recherche : Débruitage d’image par chaîne de Markov</h2>
-            <h3></h3>
-            <ul>
-            <li> Etude d'une méthode pour enlever le bruit d’une image par les chaînes de Markov</li>
-            <li>Estimation du paramètre de texture par Metropolis-Hastings sur une image bruitée avec mot de passe</li> 
-            <li> Parallélisation du programme sur R</li>
-            <li> Réalisation du rapport sur Rmarkdown </li>
-            </ul>
-            <ul>
-                <li></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </article>
-    </main>
+    <!-- Projet Analyse du cours boursier -->
+    <div class="project">
+      <h2>Analyse du cours boursier</h2>
+      <p>Réalisé avec Python (BeautifulSoup, Scikit-learn, Matplotlib)</p>
+      <ul>
+        <li>Algorithme de scraping pour la récupération de données sur le CAC40</li>
+        <li>Entraînement de modèles prédictifs (régression linéaire, K-NN, moyenne mobile) et comparaison des performances sur le cours boursier</li>
+        <li>Réalisation du rapport sur Word</li>
+      </ul>
+    </div>
+
+    <!-- Projet Étude des prix des Airbnb -->
+    <div class="project">
+      <h2>Étude des prix des Airbnb à Paris</h2>
+      <p>Réalisé avec RStudio</p>
+      <ul>
+        <li>Étude de l’influence de certains facteurs tels que la taille du logement, la localisation et la capacité d’accueil sur les prix des Airbnb</li>
+        <li>Sélection de modèles grâce aux critères de sélection (AIC, BIC, Ridge)</li>
+        <li>Réalisation du rapport sur Rmarkdown</li>
+      </ul>
+    </div>
+
+    <!-- Projet Impact de la situation professionnelle -->
+    <div class="project">
+      <h2>Impact de la situation professionnelle sur les salaires dans le domaine de la Data</h2>
+      <p>Réalisé avec RStudio (tidyverse, ggthemes, ggplot2, lmtest, car)</p>
+      <ul>
+        <li>Etude de l’influence de l'expérience, du télétravail et de la taille de l'entreprise sur les salaires 
+            d’un Data Analyst, Data Engineer et un Data Scientist aux Etats-Unis</li>
+        <li>Analyse de l’indépendance avec l’A/B testing</li>
+        <li>Réalisation du rapport sur Rmarkdown</li>
+      </ul>
+    </div>
+  </section>
 </body>
 </html>
+
