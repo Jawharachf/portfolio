@@ -1,4 +1,10 @@
 /* Style global */
+:root {
+    --primary-color: #e14ab2;  /* Couleur principale */
+    --secondary-color: #333333; /* Couleur secondaire */
+    --text-color: #ffffff;      /* Couleur du texte */
+    --background-color: #000000; /* Couleur de fond */
+  }
 body {
   font-family: Arial, sans-serif;
   background-color: #111;
@@ -18,11 +24,11 @@ header h1 {
 }
 
 header p, header nav {
-  color: #e14ab2;
+  color: var(--primary-color);
 }
 
 header nav a {
-  color: #e14ab2;
+  color: var(--primary-color);
   text-decoration: none;
   margin: 0 10px;
 }
@@ -31,16 +37,22 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-.project {
-  background-color: #333;
+.project, .about {
+  background-color: #333; 
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
   max-width: 800px;
 }
 
-.project h2 {
-  color: #e14ab2;
+  .h2{
+    border-radius: 20px;
+    color: var(--primary-color);
+    font-size: 1.5em;
+  }
+
+.project h3 {
+  color: var(--primary-color);
   font-size: 1.5em;
 }
 
@@ -55,3 +67,41 @@ header nav a:hover {
 .project li {
   margin: 5px 0;
 }
+
+section h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin: 40px 0 20px;
+  }
+/* Formation and Certification sections */
+.formation, .certification {
+    background-color: #333;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+  }
+  
+  .formation h3, .certification h3 {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .formation p em, .certification p em {
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  
+  .formation ul, .certification ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .formation li, .certification li {
+    margin: 5px 0;
+  }
