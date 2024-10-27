@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Vérifie si un thème est déjà enregistré dans le localStorage
     if (localStorage.getItem('theme') === 'dark') {
       document.body.classList.add('dark-mode');
-      toggleButton.textContent = 'Mode sombre';
+      toggleButton.textContent = 'Mode clair';
     }
   
     // Fonction de basculement
@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
       
       // Change le texte du bouton
       if (document.body.classList.contains('dark-mode')) {
-        toggleButton.textContent = 'Mode sombre';
-        localStorage.setItem('theme', 'dark');  // Enregistre le choix en mode clair
-      } else {
         toggleButton.textContent = 'Mode clair';
+        localStorage.setItem('theme', 'light');  // Enregistre le choix en mode clair
+      } else {
+        toggleButton.textContent = 'Mode sombre';
         localStorage.setItem('theme', 'dark');  // Enregistre le choix en mode sombre
       }
     });
