@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
       // Change le texte du bouton
       if (document.body.classList.contains('dark-mode')) {
         toggleButton.textContent = 'Mode clair';
-        localStorage.setItem('theme', 'light');  // Enregistre le choix en mode clair
+        localStorage.setItem('theme', 'dark');  // Enregistre le choix en mode clair
       } else {
         toggleButton.textContent = 'Mode sombre';
-        localStorage.setItem('theme', 'dark');  // Enregistre le choix en mode sombre
+        localStorage.setItem('theme', 'light');  // Enregistre le choix en mode sombre
       }
     });
   });
