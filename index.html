@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio de Jawhara Chafi</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script_js.js"></script>
 </head>
 <body>
   <header>
     <h1>Jawhara Chafi</h1>
-    <p>Stagiaire Data Scientist</p>
+    <p class = "post">Stagiaire Data Scientist</p>
     <nav>
       <a href="#about">À propos</a> | 
-      <a href="#projects">À voir par ailleurs</a>
+      <a href="#projects">Expérience</a> | 
+      <a href="#formations">Formations</a> | 
+      <a href="#certifications">Certifications</a>
     </nav>
-    <p><span>🧑‍💼 Data Science, Data Analyst</span> 
-        <span> <img src="images/linkedin_logo.png" alt="LinkedIn" style="width:15px; vertical-align:middle;"> <a href ="https://www.linkedin.com/in/jawhara-chafi/"> Linkedin </a>  </span></p>
-  </header>
+    <p>
+        <span> <img src="images/linkedin_logo.png" alt="LinkedIn" style="width:15px; vertical-align:middle;"> <a href ="https://www.linkedin.com/in/jawhara-chafi/"> Linkedin </a>  </span>
+        |<span> <img src="images/github_logo.png" alt="LinkedIn" style="width:15px; vertical-align:middle;"> <a href = https://github.com/Jawharachf> GitHub</a></span>
+        | <span> <img src="images/gitlab_logo.png" alt="GitLab" style="width:15px; vertical-align:middle;"> <a href = https://gitlab-mi.univ-reims.fr/chaf0014> GitLab</a></span>
+    </p>
+    </header>
   <section id ="abouts">
   <h2>A propos </h2>
   <div class="about">
@@ -31,13 +37,14 @@
     <!-- Projet Mémoire de recherche -->
     <div class="project">
       <h3>Mémoire de recherche : Débruitage d’image par chaîne de Markov</h3>
+      <p>Réalisé avec Rstudio <img src="images/R_logo.png" alt="R" style="width:15px; vertical-align:middle;"> et Python <img src="images/python_logo.png" alt="python" style="width:15px; vertical-align:middle;"></p>
       <p>Étude d'une méthode pour enlever le bruit d’une image par les chaînes de Markov</p>
       <ul>
         <li>Estimation du paramètre de texture par Metropolis-Hastings sur une image bruitée avec mot de passe</li>
         <li>Parallélisation du programme sur R</li>
         <li>Réalisation du rapport sur Rmarkdown</li>
       </ul>
-    </div>
+    </div></p>
 
     <!-- Projet Analyse du cours boursier -->
     <div class="project">
@@ -53,7 +60,7 @@
     <!-- Projet Étude des prix des Airbnb -->
     <div class="project">
       <h3>Étude des prix des Airbnb à Paris</h3>
-      <p>Réalisé avec RStudio</p>
+      <p>Réalisé avec RStudio <img class = "logo" src="images/R_logo.png" alt="R" style="width:15px; vertical-align:middle;"></p>
       <ul>
         <li>Étude de l’influence de certains facteurs tels que la taille du logement, la localisation et la capacité d’accueil sur les prix des Airbnb</li>
         <li>Sélection de modèles grâce aux critères de sélection (AIC, BIC, Ridge)</li>
@@ -64,7 +71,7 @@
     <!-- Projet Impact de la situation professionnelle -->
     <div class="project">
       <h3>Impact de la situation professionnelle sur les salaires dans le domaine de la Data</h3>
-      <p>Réalisé avec RStudio (tidyverse, ggthemes, ggplot2, lmtest, car)</p>
+      <p>Réalisé avec RStudio <img class = "logo" src="images/R_logo.png" alt="R" style="width:15px; vertical-align:middle;">  (tidyverse, ggthemes, ggplot2, lmtest)</p>
       <ul>
         <li>Etude de l’influence de l'expérience, du télétravail et de la taille de l'entreprise sur les salaires 
             d’un Data Analyst, Data Engineer et un Data Scientist aux Etats-Unis</li>
@@ -84,7 +91,7 @@
       <ul>
         <li>Formation en statistique, économétrie, machine learning et géostatistiques</li>
         <li>Initiation à la RGPD</li>
-        <li>Développement de compétences sur les langages Python, R, SAS, SQL et VBA</li>
+        <li>Développement de compétences sur les langages Python<img src="images/python_logo.png" alt="Python" style="width:15px; vertical-align:middle;">, R <img class = "logo"  src="images/R_logo.png" alt="R" style="width:15px; vertical-align:middle;">, SAS <img src="images/SAS_logo.png" alt="SAS" style="width:15px; vertical-align:middle;">, SQL et VBA</li>
         <li>Maîtrise des logiciels Git, PowerBI et QGIS</li>
       </ul>
     </div>
@@ -128,7 +135,9 @@
       </ul>
     </div>
   </section>
+  <button id="toggle-theme">Mode clair</button>
 
+  
 </body>
 </html>
 

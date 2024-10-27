@@ -1,9 +1,11 @@
 /* Style global */
 :root {
-    --primary-color: #e14ab2;  /* Couleur principale */
+    --primary-color: #4f7be5;  /* Couleur principale */
     --secondary-color: #333333; /* Couleur secondaire */
     --text-color: #ffffff;      /* Couleur du texte */
     --background-color: #000000; /* Couleur de fond */
+    --primary-background-light: #90bcdf;
+    --text-color-light: #100b0b;      /* Couleur du texte */
   }
 body {
   font-family: Arial, sans-serif;
@@ -12,6 +14,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.post{
+    color: var(--text-color)
+
+}
 
 header {
   text-align: center;
@@ -19,7 +25,7 @@ header {
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 3em;
   color: #fff;
 }
 
@@ -45,11 +51,11 @@ header nav a:hover {
   max-width: 800px;
 }
 
-  .h2{
+.h2{
     border-radius: 20px;
     color: var(--primary-color);
     font-size: 1.5em;
-  }
+}
 
 .project h3 {
   color: var(--primary-color);
@@ -92,11 +98,7 @@ section h2 {
     margin-bottom: 10px;
   }
   
-  .formation p em, .certification p em {
-    font-size: 0.9em;
-    color: #aaa;
-  }
-  
+ 
   .formation ul, .certification ul {
     margin-top: 10px;
     padding-left: 20px;
@@ -104,4 +106,54 @@ section h2 {
   
   .formation li, .certification li {
     margin: 5px 0;
+  }
+
+  /* Changer la couleur lorque le site a déjà été cliqué */
+  a:visited {
+    color: pink;
+  }
+
+  /* Mode clair */
+  .light-mode {
+    background-color: #ffffff;
+    color: #121212;
+  }
+  .light-mode header h1 {
+    font-size: 3em;
+    color: var(--text-color-light);
+  }
+  
+  .light-mode a {
+    color: #0073e6;
+  }
+
+  .light-mode a:visited {
+    color: #ff69b4;
+  }
+
+  .light-mode .formation, .light-mode  .project, .light-mode  .certification, .light-mode  .about {
+    background-color: var(--primary-background-light);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+  }
+  .light-mode .post{
+    color: var(--text-color-light)
+
+}
+
+  
+
+  /* Style du bouton */
+  #toggle-theme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
   }
