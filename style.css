@@ -1,0 +1,101 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #ddd;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* En-tête principal */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #888;
+    margin-top: 5px;
+}
+
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    color: #00cc66;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Section des tags */
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+/* Section principale */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+article h2 {
+    font-size: 1.8em;
+    color: #00cc66;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+article a {
+    color: #00cc66;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 0.95em;
+    color: #aaa;
+    margin-bottom: 5px;
+}
