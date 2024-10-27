@@ -135,7 +135,7 @@ section h2 {
 
   /* Changer la couleur lorque le site a déjà été cliqué */
   a:visited {
-    color: pink;
+    color: rgb(74, 88, 110);
   }
 
 
