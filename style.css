@@ -135,12 +135,22 @@ section h2 {
 
   /* Changer la couleur lorque le site a déjà été cliqué */
   a:visited {
-    color: rgb(74, 88, 110);
+    color: rgb(97, 152, 240);
   }
 
 
 
-  
+  .certification a {
+    color: var(--primary-color); /* Utiliser la couleur principale */
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.certification a:hover {
+    color: var(--primary-background-light); 
+    text-decoration: none;
+}
 
   /* Style du bouton */
   #toggle-theme {
